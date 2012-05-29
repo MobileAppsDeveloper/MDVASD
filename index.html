@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
+		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Jose A. Carrillo" />
+		
+		<!-- Allows for proper display on iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Allows for proper display on Androids -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
+		<!-- Allows for optimized display on older feature phones -->
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+
+		<link rel="apple-touch-icon" href="../images/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../images/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../images/touch-icon-iphone4.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<title>My Collection</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="../css/style_override.css">
+		<link rel="stylesheet" href="../css/add2home.css">
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="../js/libs/modernizr.custom.min.js"></script>
+
+		<script src="../js/add2home.js" charset="utf-8">
+		<script type="text/javascript">
+		var addToHomeConfig = {
+			message: 'This is a custom message. Your device is an <strong>%device</strong>. The action icon is %icon.'
+		};
+		</script>
+
+		<!--<script>
+		$.get('data.html',function(data){
+					$('#something').append(data).trigger('create');
+					},'html');
+		</script>-->  
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+<!-- bof Page 1: #index -->
+<div class="background" data-role="page" id="index" data-add-back-btn="true">
+
+<div data-role="header" data-position="inline">
+<img class="logo" src="../images/movies_small.png" /><a href="index.html" data-icon="home" data-iconpos="notext" data-ajax="false">Home</a>
+<h1>My Collection</h1>
+<!--<a href="index.html" data-icon="check">Save</a>-->
+</div><!-- /header -->
+
+<div data-role="content" >
+
+<div class="centeredContent">
+<img src="../images/movies.png" />
+</div>
+
+<div class="intro">
+Movies, MP3s, DVDs
+</div>
+
+<!--<h2>iRate My Flicks</h2>-->
+<br class="clearBoth" />
+<div class="content-primary">
+<ul data-role="listview" data-filter="true" data-inset="true">
+<li data-theme="b"><h3>Unlimited Instant Videos</h3><span class="ui-li-count">5</span>
+<p>You could have unlimited instant streaming of thousands of movies and TV shows included with an Amazon Prime membership at no additional cost.</p>
+<ul>
+<li data-theme="b"><a href="view_ratings.html">Categories</a><span class="ui-li-count">5</span>
+<ul>
+<li data-theme="b"><a href="action_rows.html">Action & Adventure<span class="ui-li-count">5</span></a></li>
+<li><a href="view_ratings.html">Anime</a></li>
+<li><a href="view_ratings.html">Children & Family</a></li>
+<li><a href="view_ratings.html">Classics</a></li>
+<li><a href="view_ratings.html">Comedies</a></li>
+<li><a href="view_ratings.html">Documentaries</a></li>
+<li><a href="view_ratings.html">Dramas</a></li>
+<li><a href="view_ratings.html">Faith & Spirituality</a></li>
+<li><a href="view_ratings.html">Foreign</a></li>
+<li><a href="view_ratings.html">Gay & Lesbian</a></li>
+<li><a href="view_ratings.html">Horror</a></li>
+<li><a href="view_ratings.html">Independent</a></li>
+<li><a href="view_ratings.html">Music</a></li>
+<li><a href="view_ratings.html">Musicals</a></li>
+<li><a href="view_ratings.html">Romance</a></li>
+<li><a href="view_ratings.html">Sci-Fi & Fantasy</a></li>
+<li><a href="view_ratings.html">Special Interest</a></li>
+<li><a href="view_ratings.html">Sport & Fitness</a></li>
+<li><a href="view_ratings.html">TV Shows</a></li>
+<li><a href="view_ratings.html">Thrilers</a></li> </ul>
+</li>
+
+<li><a href="view_ratings.html">Your Video Library<span class="ui-li-count">0</span></a></li>
+<li><a href="view_ratings.html">Watch Anywhere<span class="ui-li-count">0</span></a></li>
+</ul>
+</li>
+<li>
+<a href="news1.html"><h3>News</h3>
+<p>Infinite List Demo. The page was designed using the infinite list format and at the bottom displays a "load more messages" button that links to a second page.</p>
+</a>
+</li>
+<li>
+<a href="filmstrip.html" data-ajax="false"><h3>Filmstrip</h3>
+<p>Filmstrip Demo. This filmstrip uses the iosslider script.</p>
+</a>
+</li>
+<li>
+<a href="http://mobileappsdeveloper.github.com/MiU-1204" target="_blank"><h3>Github</h3>
+<p>The github page (opens in a new window)</p>
+</a>
+</li>
+<li>
+<a href="http://github.com/MobileAppsDeveloper/MiU-1204" target="_blank"><h3>Repository</h3>
+<p>The github repository (opens in a new window)</p>
+</a>
+</li>
+</ul>
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+				<ul>
+					<li><a href="favorites.html" data-icon="star" data-iconpos="top" data-ajax="false">FAVs</a></li>
+					<li><a href="account.html" data-icon="info" data-iconpos="top" data-ajax="false">Account</a></li>
+					<li><a href="faq.html" data-icon="gear" data-iconpos="top" data-ajax="false">FAQs</a></li>
+					<li><a href="news1.html" data-icon="grid" data-iconpos="top" data-ajax="false">News</a></li>
+				</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div><!--/content-primary -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script>
+$(document).bind("mobileinit", function(){
+$.mobile.touchOverflowEnabled = true;
+});
+</script>
+
+
+<script src="../js/json.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/transition.js"></script>
+
+
+</body>
+</html>
